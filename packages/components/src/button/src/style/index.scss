@@ -1,0 +1,93 @@
+.s-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  
+  &--small {
+    height: 32px;
+    padding: 0 12px;
+  }
+  
+  &--medium {
+    height: 40px;
+    padding: 0 16px;
+  }
+  
+  &--large {
+    height: 48px;
+    padding: 0 20px;
+  }
+  
+  &--default {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    
+    &.s-button--hover-hov1:hover:not(.s-button--disabled) {
+      background-color: #e0e0e0;
+    }
+    
+    &.s-button--hover-hov2:hover:not(.s-button--disabled) {
+      background-color: #f0f0f0;
+      // 设置阴影效果和动画
+      box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.9);
+      transform: translate(-2px, -2px);
+      // 动画
+      transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    
+    &:active:not(.s-button--disabled) {
+      background-color: #c0c0c0;
+    }
+  }
+  
+  &--primary {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    
+    &.s-button--hover-hov1:hover:not(.s-button--disabled) {
+      background-color: #1a1a1a;
+    }
+    
+    &.s-button--hover-hov2:hover:not(.s-button--disabled) {
+      background-color: #333333;
+      border-color: #333333;
+      box-shadow: 4px 4px 1px rgba($color: #585858, $alpha: 1.0);
+      transform: translate(-2px, -2px);
+      transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    
+    &:active:not(.s-button--disabled) {
+      background-color: #333333;
+    }
+  }
+  
+  &--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.s-button {
+  &__loading-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: s-button-loading-rotate 1s linear infinite;
+    margin-right: 8px;
+  }
+}
+
+@keyframes s-button-loading-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

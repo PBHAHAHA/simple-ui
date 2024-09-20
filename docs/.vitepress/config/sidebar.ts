@@ -1,0 +1,28 @@
+import { createComponentSiderBar } from "../utils/createComponentSiderBar"
+
+const _componentsSiderBarItems:{
+  text: string
+  link: string
+}[] = [
+
+]
+
+const componentsSiderBarItems = createComponentSiderBar() ?? _componentsSiderBarItems
+
+export const sidebar = {
+  '/guide/': [
+    {
+      text: '指引',
+      items: [
+        {
+          text: '特性',
+          link: '/guide/features'
+        },
+      ]
+    },
+    {
+      text: '组件',
+      items: componentsSiderBarItems,
+    }
+  ],
+}
