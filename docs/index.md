@@ -1,10 +1,10 @@
 ---
 layout: home
-title: Simple-UI
+title: Simpler-UI
 titleTemplate: 基于 Vue3 的轻量级组件库
 
 hero:
-  name: Simple-UI
+  name: Simpler-UI
   text: 轻量级 Vue3 组件库
   tagline: 简单易用、高效的 UI 组件
   actions:
