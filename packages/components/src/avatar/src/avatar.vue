@@ -26,18 +26,5 @@ const handleError = () => {
 </script>
 
 <style scoped>
-.avatar {
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ccc; /* 默认灰色背景 */
-}
 
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 </style>
