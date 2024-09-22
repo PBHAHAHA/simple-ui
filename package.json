@@ -1,8 +1,8 @@
 {
   "name": "simpler-ui",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "author": "PBHAHAHA",
-  "description": "开源的组件库开发起始模板，帮助以最轻松的方式搭建功能完善的Vue3组件库，让使用者只需关注到组件的开发，无需关注繁琐的搭建配置。",
+  "description": "vue3-ui组件库，简约设计",
   "keywords": [
     "components",
     "Vue3",
@@ -12,12 +12,6 @@
   "main": "dist/lib/index.js",
   "module": "dist/es/index.js",
   "types": "dist/lib/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/es/index.js",
-      "require": "./dist/lib/index.js"
-    }
-  },
   "scripts": {
     "build": "gulp -f packages/script/build/index.ts",
     "component:create": "esno ./utils/create/index.ts",
