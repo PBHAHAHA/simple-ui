@@ -5,23 +5,20 @@
         <slot name="header">
           <div>{{ title }}</div>
         </slot>
-        <button @click="closeDialog" class="dialog-close-button">X</button>
+        <s-icon class="dialog-close-button" @click="closeDialog" name="Close" size="18" />
       </div>
       <div class="dialog-body">
-        <slot name="body">
-          这是一个对话框
-        </slot>
+        <slot name="body"></slot>
       </div>
       <div class="dialog-footer">
-        <slot name="footer">
-          <button @click="closeDialog" class="dialog-confirm-button">确认</button>
-        </slot>
+        <slot name="footer"></slot>
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { ref, defineProps, defineEmits, watch } from 'vue';
+
 
 defineOptions({
   name: 'SDialog'
@@ -44,6 +41,4 @@ watch(() => props.modelValue, (newVal) => {
   }
 });
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>
