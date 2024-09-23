@@ -46,5 +46,8 @@
     "vite": "^4.5.0",
     "vitepress": "1.0.0-rc.24",
     "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "@icon-park/vue-next": "^1.4.2"
   }
 }
